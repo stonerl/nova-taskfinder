@@ -5,9 +5,7 @@
 	"organization": "Little Green Man Ltd",
 	"description": "Automatically offers Composer, Node, Maidfile & Taskfile actions as Nova Tasks.",
 	"version": "5.0.0",
-	"categories": [
-		"tasks"
-	],
+	"categories": ["tasks"],
 	"homepage": "https://github.com/little-green-man/nova-taskfinder",
 	"repository": "https://github.com/little-green-man/nova-taskfinder",
 	"bugs": "https://github.com/little-green-man/nova-taskfinder/issues",
@@ -34,18 +32,9 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[
-							null,
-							"Global Setting"
-						],
-						[
-							"npm",
-							"npm"
-						],
-						[
-							"yarn",
-							"yarn"
-						]
+						[null, "Global Setting"],
+						["npm", "npm"],
+						["yarn", "yarn"]
 					],
 					"default": null
 				}
@@ -61,18 +50,9 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[
-							null,
-							"Global Setting"
-						],
-						[
-							true,
-							"Enabled"
-						],
-						[
-							false,
-							"Disabled"
-						]
+						[null, "Global Setting"],
+						[true, "Enabled"],
+						[false, "Disabled"]
 					],
 					"default": null
 				},
@@ -82,18 +62,9 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[
-							null,
-							"Global Setting"
-						],
-						[
-							true,
-							"Enabled"
-						],
-						[
-							false,
-							"Disabled"
-						]
+						[null, "Global Setting"],
+						[true, "Enabled"],
+						[false, "Disabled"]
 					],
 					"default": null
 				},
@@ -103,18 +74,9 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[
-							null,
-							"Global Setting"
-						],
-						[
-							true,
-							"Enabled"
-						],
-						[
-							false,
-							"Disabled"
-						]
+						[null, "Global Setting"],
+						[true, "Enabled"],
+						[false, "Disabled"]
 					],
 					"default": null
 				},
@@ -124,18 +86,9 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[
-							null,
-							"Global Setting"
-						],
-						[
-							true,
-							"Enabled"
-						],
-						[
-							false,
-							"Disabled"
-						]
+						[null, "Global Setting"],
+						[true, "Enabled"],
+						[false, "Disabled"]
 					],
 					"default": null
 				}
@@ -153,18 +106,9 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[
-							null,
-							"Global Setting"
-						],
-						[
-							"npm",
-							"npm"
-						],
-						[
-							"yarn",
-							"yarn"
-						]
+						[null, "Global Setting"],
+						["npm", "npm"],
+						["yarn", "yarn"]
 					],
 					"default": "npm"
 				}
