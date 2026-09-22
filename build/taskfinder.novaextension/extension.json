@@ -5,7 +5,9 @@
 	"organization": "Little Green Man Ltd",
 	"description": "Automatically offers Composer, Node, Maidfile & Taskfile actions as Nova Tasks.",
 	"version": "5.0.0",
-	"categories": ["tasks"],
+	"categories": [
+		"tasks"
+	],
 	"homepage": "https://github.com/little-green-man/nova-taskfinder",
 	"repository": "https://github.com/little-green-man/nova-taskfinder",
 	"bugs": "https://github.com/little-green-man/nova-taskfinder/issues",
@@ -30,8 +32,22 @@
 					"key": "taskfinder.package-manager",
 					"title": "Package Manager",
 					"type": "enum",
-					"values": ["npm", "yarn"],
-					"default": "npm"
+					"radio": false,
+					"values": [
+						[
+							null,
+							"Global Setting"
+						],
+						[
+							"npm",
+							"npm"
+						],
+						[
+							"yarn",
+							"yarn"
+						]
+					],
+					"default": null
 				}
 			]
 		},
@@ -42,30 +58,86 @@
 				{
 					"key": "taskfinder.auto-composer",
 					"title": "Include Composer Tasks",
-					"description": "Requires workspace restart",
-					"type": "boolean",
-					"default": true
+					"type": "enum",
+					"radio": false,
+					"values": [
+						[
+							null,
+							"Global Setting"
+						],
+						[
+							true,
+							"Enabled"
+						],
+						[
+							false,
+							"Disabled"
+						]
+					],
+					"default": null
 				},
 				{
 					"key": "taskfinder.auto-node",
 					"title": "Include Node Tasks",
-					"description": "Requires workspace restart",
-					"type": "boolean",
-					"default": true
+					"type": "enum",
+					"radio": false,
+					"values": [
+						[
+							null,
+							"Global Setting"
+						],
+						[
+							true,
+							"Enabled"
+						],
+						[
+							false,
+							"Disabled"
+						]
+					],
+					"default": null
 				},
 				{
 					"key": "taskfinder.auto-taskfile",
 					"title": "Include Taskfile Tasks",
-					"description": "Requires workspace restart",
-					"type": "boolean",
-					"default": true
+					"type": "enum",
+					"radio": false,
+					"values": [
+						[
+							null,
+							"Global Setting"
+						],
+						[
+							true,
+							"Enabled"
+						],
+						[
+							false,
+							"Disabled"
+						]
+					],
+					"default": null
 				},
 				{
 					"key": "taskfinder.auto-maidfile",
 					"title": "Include Maidfile Tasks",
-					"description": "Requires workspace restart",
-					"type": "boolean",
-					"default": true
+					"type": "enum",
+					"radio": false,
+					"values": [
+						[
+							null,
+							"Global Setting"
+						],
+						[
+							true,
+							"Enabled"
+						],
+						[
+							false,
+							"Disabled"
+						]
+					],
+					"default": null
 				}
 			]
 		}
@@ -79,7 +151,21 @@
 					"key": "taskfinder.package-manager",
 					"title": "Package Manager",
 					"type": "enum",
-					"values": ["npm", "yarn"],
+					"radio": false,
+					"values": [
+						[
+							null,
+							"Global Setting"
+						],
+						[
+							"npm",
+							"npm"
+						],
+						[
+							"yarn",
+							"yarn"
+						]
+					],
 					"default": "npm"
 				}
 			]
@@ -91,28 +177,24 @@
 				{
 					"key": "taskfinder.auto-composer",
 					"title": "Include Composer Tasks",
-					"description": "Requires workspace restart",
 					"type": "boolean",
 					"default": true
 				},
 				{
 					"key": "taskfinder.auto-node",
 					"title": "Include Node Tasks",
-					"description": "Requires workspace restart",
 					"type": "boolean",
 					"default": true
 				},
 				{
 					"key": "taskfinder.auto-taskfile",
 					"title": "Include Taskfile Tasks",
-					"description": "Requires workspace restart",
 					"type": "boolean",
 					"default": true
 				},
 				{
 					"key": "taskfinder.auto-maidfile",
 					"title": "Include Maidfile Tasks",
-					"description": "Requires workspace restart",
 					"type": "boolean",
 					"default": true
 				}
