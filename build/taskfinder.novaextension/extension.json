@@ -106,7 +106,6 @@
 					"type": "enum",
 					"radio": false,
 					"values": [
-						[null, "Global Setting"],
 						["npm", "npm"],
 						["yarn", "yarn"]
 					],
